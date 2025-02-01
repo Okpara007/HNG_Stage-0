@@ -36,3 +36,22 @@ pip install -r requirements.txt
 To start the Django development server and test the project locally:
 python manage.py runserver
 The project will now be running at http://127.0.0.1:8000/
+
+### 5. Accessing the API
+Homepage: Visit http://127.0.0.1:8000/ to be redirected to /api/.
+API Endpoint: Visit http://127.0.0.1:8000/api/ to receive the JSON response containing the email, current datetime, and GitHub URL.
+
+### API Documentation
+
+Endpoint: /api/
+Method: GET
+Response Format: JSON
+Response Example:
+{
+  "email": "chinemeremokpara93@gmail.com",
+  "current_datetime": "2025-02-01T07:11:17.516955Z",
+  "github_url": "https://github.com/Okpara007/HNG_Stage-0.git"
+}
+
+### Backlink
+HNG Tech - Hire Python Developers
