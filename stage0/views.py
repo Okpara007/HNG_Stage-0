@@ -1,10 +1,4 @@
-from django.http import JsonResponse
-from datetime import datetime
+from django.http import HttpResponse
 
-def get_info(request):
-    data = {
-        "email": "chinemeremokpara93@gmail.com",  
-        "current_datetime": datetime.utcnow().isoformat() + "Z", 
-        "github_url": "https://github.com/Okpara007/HNG_Stage-0"  
-    }
-    return JsonResponse(data)
+def homepage(request):
+    return HttpResponse('<h1>Welcome! Please go to <a href="/api">/api</a> to access the API.</h1>')
